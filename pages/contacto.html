@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/Logo.jpg">
+    <!--Link al CSS-->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <title>Contacto</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo__div1">
+            <img src="../assets/Logo1.png" alt="Logo" class="logo__imagen">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html"><b>INICIO</b></a>
+                </li>
+                <li>
+                    <a href="./nosotros.html"><b>NOSOTROS</b></a>
+                </li>
+                <li>
+                    <a href="./contacto.html"><b>CONTACTO</b></a>
+                </li>
+                <li>
+                    <a href="./productos.html"><b>PRODUCTOS</b></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main__contacto">
+        <section>
+            <form>
+                <h2>Contactanos</h2>
+                <div class="form__contenido">
+                    <label for="Nombre y Apellidos"><b>Nombre y Apellidos</b></label>
+                    <input type="text" name="Nombre y Apellidos" placeholder="Ingrese su nombre y apellidos" required>
+                </div>
+                <div class="form__contenido">
+                    <label for="Correo"><b>Correo electronico</b></label>
+                    <input type="email" name="Correo" placeholder="Ingrese su correo aqui" required>
+                </div>
+                <div class="form__contenido">
+                    <label for="Motivo de contacto"><b>Motivo del contacto</b></label>
+                    <select>
+                        <option value="...">...</option>
+                        <option value="Problemas de funcionamiento">Problemas de funcionamiento</option>
+                        <option value="Problemas de envio y packaging">Problemas de envio y packaging</option>
+                        <option value="Producto que recibio no es el que corresponde">Producto que recibio no es el que
+                            corresponde</option>
+                        <option value="Otro motivo">Otro motivo</option>
+                    </select>
+                </div>
+                <div class="form__contenido">
+                    <label for="Mensaje"><b>Deja tu mensaje</b></label>
+                    <textarea name="Mensaje" id="" cols="60" rows="10" placeholder="Deja tu mensaje"></textarea>
+                </div>
+                <div class="form__contenido">
+                    <button type="reset"><b>Reset</b></button>
+                    <button type="submit"><b>Enviar</b></button>
+                </div>
+            </form>
+        </section>
+        <section class="imagen__form">
+            <img src="../assets/FotoContacto.png" alt="Tarjeta modelo">
+        </section>
+    </main>
+    <footer>
+        <div class="footer__nav">
+            <ul>
+                <li>
+                    <a href="../index.html"><b>INICIO</b></a>
+                </li>
+                <li>
+                    <a href="./nosotros.html"><b>NOSOTROS</b></a>
+                </li>
+                <li>
+                    <a href="./contacto.html"><b>CONTACTO</b></a>
+                </li>
+                <li>
+                    <a href="./productos.html"><b>PRODUCTOS</b></a>
+                </li>
+            </ul>
+        </div>
+
+        <article class="footer__form">
+            <h4>
+                <b>CONOZCA NUESTRAS PROMOCIONES Y NOVEDADES</b>
+            </h4>
+            <form class="newslatter__form">
+                <div>
+                    <label for="Correo electronico"></label>
+                    <input type="email" name="Correo electronico" placeholder="Correo electronico" required
+                        class="newslatter__box">
+                    <button type="submit" class="boton"><b>Suscribirse</b></button>
+                </div>
+                <div>
+                    <label for="Condiciones legales">Acepto condiciones legales</label>
+                    <input type="checkbox" name="Condiciones legales" required>
+                </div>
+                <div>
+                    <label for="Informacion comercial">Acepto que me envien informacion comercial</label>
+                    <input type="checkbox" name="Informacion comercial" required>
+                </div>
+            </form>
+        </article>
+
+        <div class="footer__redes">
+            <p><b>SIGUENOS EN NUESTRAS REDES SOCIALES</b></p>
+            <section class="footer__redes__links">
+                <a href="https://facebook.com" target="valor_blank"><img src="../assets/LogoFacebook.png"
+                        alt="Facebook"></a>
+                <a href="https://instagram.com" target="valor_blank"><img src="../assets/LogoInsta.png"
+                        alt="Instagram"></a>
+                <a href="https://www.youtube.com" target="valor_blank"><img src="../assets/LogoYoutube.png"
+                        alt="Youtube"></a>
+            </section>
+        </div>
+    </footer>
+    <div>
+        <p class="h3__copyright">Copyright - Todos los derechos reservados</p>
+    </div>
+</body>
+
+</html>

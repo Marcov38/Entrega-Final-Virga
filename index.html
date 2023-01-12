@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/Logo2.png">
+    <!--Link al CSS-->
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <title>
+        Hi my party
+    </title>
+</head>
+
+<body>
+    <header> <!--SUMA PUNTOS PARA EL CEO SIEMPRE PONERLO-->
+        <!--El class se puede reutilizar en diferentes etiquetas el id No se puede reutilizar-->
+        <div class="logo__div1">
+            <img src="./assets/Logo1.png" alt="Logo" class="logo__imagen">
+        </div>
+        <nav class="nav__container">
+            <ul>
+                <li>
+                    <a href="./index.html"><b>INICIO</b></a>
+                </li>
+                <li>
+                    <a href="./pages/nosotros.html"><b>NOSOTROS</b></a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html"><b>CONTACTO</b></a>
+                </li>
+                <li>
+                    <a href="./pages/productos.html"><b>PRODUCTOS</b></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="div__inicio">
+            <h1><b>Bienvenidos a <br>Hi my party</b></h1>
+            <p class="parrafo__inicio">
+                <span>Te acompañamos en tus momentos mas importantes.</span> 
+            </p>
+            <a href="./pages/productos.html" class="boton__inicio"><b>Pidelo Aqui</b></a>
+        </section>
+
+        <section class="section__productos">
+            <h1><b>Algunos de nuestros productos</b></h1>
+            <div class="contenedor__productos">
+                <article>
+                    <img src="./assets/Tarjeta1.png" alt="Imagen Tarjeta">
+                    <img src="./assets/Tarjeta2.png" alt="Imagen Tarjeta">
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__nav">
+            <ul>
+                <li>
+                    <a href="./index.html"><b>INICIO</b></a>
+                </li>
+                <li>
+                    <a href="./pages/nosotros.html"><b>NOSOTROS</b></a>
+                </li>
+                <li>
+                    <a href="./pages/contacto.html"><b>CONTACTO</b></a>
+                </li>
+                <li>
+                    <a href="./pages/productos.html"><b>PRODUCTOS</b></a>
+                </li>
+            </ul>
+        </div>
+
+        <article class="footer__form">
+            <h4>
+                <b>CONOZCA NUESTRAS PROMOCIONES Y NOVEDADES</b>
+            </h4>
+            <form class="newslatter__form">
+                <div>
+                    <label for="Correo electronico"></label>
+                    <input type="email" name="Correo electronico" placeholder="Correo electronico" required
+                        class="newslatter__box">
+                    <button type="submit" class="boton"><b>Suscribirse</b></button>
+                </div>
+                <div>
+                    <label for="Condiciones legales">Acepto condiciones legales</label>
+                    <input type="checkbox" name="Condiciones legales" required>
+                </div>
+                <div>
+                    <label for="Informacion comercial">Acepto que me envien informacion comercial</label>
+                    <input type="checkbox" name="Informacion comercial" required>
+                </div>
+            </form>
+        </article>
+
+        <div class="footer__redes">
+            <p><b>SIGUENOS EN NUESTRAS REDES SOCIALES</b></p>
+            <section>
+                <a href="https://facebook.com" target="valor_blank"><img src="./assets/LogoFacebook.png"
+                        alt="Facebook"></a>
+                <a href="https://instagram.com" target="valor_blank"><img src="./assets/LogoInsta.png"
+                        alt="Instagram"></a>
+                <a href="https://www.youtube.com" target="valor_blank"><img src="./assets/LogoYoutube.png"
+                        alt="Youtube"></a>
+            </section>
+        </div>
+    </footer>
+    <div>
+        <p class="h3__copyright">Copyright - Todos los derechos reservados</p>
+    </div>
+</body>
+
+</html>
+
+<!-- FUNCION DISPLAY-->
+<!-- LA FUNCION DISPLAY ESTA CON INLINE O BLOCK, SE USA PARA ELEGIR COMO QUIERO QUE SE COMPORTE UN ELEMENTO DE MI WEB, TAMBIEN SE COMBINAN COMO DISPLAY BLOCKINLINE-->
