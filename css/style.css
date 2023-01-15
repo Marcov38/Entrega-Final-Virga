@@ -542,7 +542,70 @@ footer > * {
     }
 
     /*FOOTER*/
+
+/*NOSOTROS RESPONSIVE*/
+
+.main__nosotros section {
+    display: flex;
+    flex-flow: column wrap;
 }
 
+.main__nosotros section article h1 {
+    text-align: center;
+}
 
+.main__nosotros section article p {
+    text-align: justify;
+}
+
+.galeria__nosotros {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+}
+
+/*NOSOTROS RESPONSIVE*/
+
+/*CONTACTO RESPONSIVE*/
+
+.main__contacto {
+    flex-flow: column-reverse;
+}
+
+.main__contacto section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.imagen__form img {
+    height: 500px;
+    width: 350px;
+}
+
+/*CONTACTO RESPONSIVE*/
+
+/*PRODUCTOS RESPONSIVE*/
+
+.main__productos {
+    padding-bottom: 10px;
+}
+
+.tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+}
+
+.tarjeta h2 {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.tarjeta__contenedora button {
+    font-size: 12px;
+}
+/*PRODUCTOS RESPONSIVE*/
+
+}
                                                         /* MEDIA QUERY */
