@@ -2,114 +2,170 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./assets/Logo2.png">
-    <!--Link al CSS-->
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>
-        Hi my party
-    </title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/Logo2.png">
+  <!--Link al Bootstrap se copia y pega en todos los html-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--Link al CSS-->
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <title>
+    Hi my party
+  </title>
 </head>
 
 <body>
-    <header> <!--SUMA PUNTOS PARA EL CEO SIEMPRE PONERLO-->
-        <!--El class se puede reutilizar en diferentes etiquetas el id No se puede reutilizar-->
-        <div class="logo__div1">
-            <img src="./assets/Logo1.png" alt="Logo" class="logo__imagen">
-        </div>
-        <nav class="nav__container">
-            <ul>
-                <li>
-                    <a href="./index.html"><b>INICIO</b></a>
-                </li>
-                <li>
-                    <a href="./pages/nosotros.html"><b>NOSOTROS</b></a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html"><b>CONTACTO</b></a>
-                </li>
-                <li>
-                    <a href="./pages/productos.html"><b>PRODUCTOS</b></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="div__inicio">
-            <h1><b>Bienvenidos a <br>Hi my party</b></h1>
-            <p class="parrafo__inicio">
-                <span>Te acompañamos en tus momentos mas importantes.</span> 
-            </p>
-            <a href="./pages/productos.html" class="boton__inicio"><b>Pidelo Aqui</b></a>
-        </section>
-
-        <section class="section__productos">
-            <h1><b>Algunos de nuestros productos</b></h1>
-            <div class="contenedor__productos">
-                <article>
-                    <img src="./assets/Tarjeta1.png" alt="Imagen Tarjeta">
-                    <img src="./assets/Tarjeta2.png" alt="Imagen Tarjeta">
-                </article>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer__nav">
-            <ul>
-                <li>
-                    <a href="./index.html"><b>INICIO</b></a>
-                </li>
-                <li>
-                    <a href="./pages/nosotros.html"><b>NOSOTROS</b></a>
-                </li>
-                <li>
-                    <a href="./pages/contacto.html"><b>CONTACTO</b></a>
-                </li>
-                <li>
-                    <a href="./pages/productos.html"><b>PRODUCTOS</b></a>
-                </li>
-            </ul>
-        </div>
-
-        <article class="footer__form">
-            <h4>
-                <b>CONOZCA NUESTRAS PROMOCIONES Y NOVEDADES</b>
-            </h4>
-            <form class="newslatter__form">
-                <div>
-                    <label for="Correo electronico"></label>
-                    <input type="email" name="Correo electronico" placeholder="Correo electronico" required
-                        class="newslatter__box">
-                    <button type="submit" class="boton"><b>Suscribirse</b></button>
-                </div>
-                <div>
-                    <label for="Condiciones legales">Acepto condiciones legales</label>
-                    <input type="checkbox" name="Condiciones legales" required>
-                </div>
-                <div>
-                    <label for="Informacion comercial">Acepto que me envien informacion comercial</label>
-                    <input type="checkbox" name="Informacion comercial" required>
-                </div>
-            </form>
-        </article>
-
-        <div class="footer__redes">
-            <p><b>SIGUENOS EN NUESTRAS REDES SOCIALES</b></p>
-            <section>
-                <a href="https://facebook.com" target="valor_blank"><img src="./assets/LogoFacebook.png"
-                        alt="Facebook"></a>
-                <a href="https://instagram.com" target="valor_blank"><img src="./assets/LogoInsta.png"
-                        alt="Instagram"></a>
-                <a href="https://www.youtube.com" target="valor_blank"><img src="./assets/LogoYoutube.png"
-                        alt="Youtube"></a>
-            </section>
-        </div>
-    </footer>
-    <div>
-        <p class="h3__copyright">Copyright - Todos los derechos reservados</p>
+  <header> <!--SUMA PUNTOS PARA EL CEO SIEMPRE PONERLO-->
+    <!--El class se puede reutilizar en diferentes etiquetas el id No se puede reutilizar-->
+    <div class="logo__div1">
+      <img src="./assets/Logo1.png" alt="Logo" class="logo__imagen">
     </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./index.html"><b>Inicio</b></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/nosotros.html"><b>Nosotros</b></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/contacto.html"><b>Contacto</b></a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/productos.html"><b>Productos</b></a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+    <section class="div__inicio">
+      <h1><b>Bienvenidos a <br>Hi my party</b></h1>
+      <p class="parrafo__inicio">
+        <span>Te acompañamos en tus momentos mas importantes.</span>
+      </p>
+      <a href="./pages/productos.html" class="boton__inicio"><b>Pidelo Aqui</b></a>
+    </section>
+
+    <section class="background">
+      <div class="titulo__inicio">
+        <h1><b>Te mostramos algunos de nuestros productos</b></h1>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="card-index">
+              <img src="./assets/Tarjeta1.png" class="card-img " alt="Producto 1">
+              <div class="card-body">
+                <h5 class="card-text"><b>Modelo Cumpleaños 1.</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="card-index">
+              <img src="./assets/Tarjeta2.png" class="card-img " alt="Producto 2">
+              <div class="card-body">
+                <h5 class="card-text"><b>Modelo Cumpleaños 2.</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="card-index">
+              <img src="./assets/Tarjeta3.jpg" class="card-img " alt="Producto 3">
+              <div class="card-body">
+                <h5 class="card-text"><b>Modelo Boda</b></h5>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-6">
+            <div class="card-index">
+              <img src="./assets/Tarjeta4.png" class="card-img " alt="Producto 4">
+              <div class="card-body">
+                <h5 class="card-text"><b>Modelo Cumpleaños 3.</b></h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer__nav">
+      <ul>
+        <li>
+          <a href="./index.html"><b>INICIO</b></a>
+        </li>
+        <li>
+          <a href="./pages/nosotros.html"><b>NOSOTROS</b></a>
+        </li>
+        <li>
+          <a href="./pages/contacto.html"><b>CONTACTO</b></a>
+        </li>
+        <li>
+          <a href="./pages/productos.html"><b>PRODUCTOS</b></a>
+        </li>
+      </ul>
+    </div>
+
+    <article class="footer__form">
+      <h4>
+        <b>CONOZCA NUESTRAS PROMOCIONES Y NOVEDADES</b>
+      </h4>
+      <form class="newslatter__form">
+        <div>
+          <label for="Correo electronico"></label>
+          <input type="email" name="Correo electronico" placeholder="Correo electronico" required
+            class="newslatter__box">
+          <button type="submit" class="boton"><b>Suscribirse</b></button>
+        </div>
+        <div>
+          <label for="Condiciones legales">Acepto condiciones legales</label>
+          <input type="checkbox" name="Condiciones legales" required>
+        </div>
+        <div>
+          <label for="Informacion comercial">Acepto que me envien informacion comercial</label>
+          <input type="checkbox" name="Informacion comercial" required>
+        </div>
+      </form>
+    </article>
+
+    <div class="footer__redes">
+      <p><b>SIGUENOS EN NUESTRAS REDES SOCIALES</b></p>
+      <section>
+        <a href="https://facebook.com" target="valor_blank"><img src="./assets/LogoFacebook.png" alt="Facebook"></a>
+        <a href="https://instagram.com" target="valor_blank"><img src="./assets/LogoInsta.png" alt="Instagram"></a>
+        <a href="https://www.youtube.com" target="valor_blank"><img src="./assets/LogoYoutube.png" alt="Youtube"></a>
+      </section>
+    </div>
+  </footer>
+  <div>
+    <p class="h3__copyright">Copyright - Todos los derechos reservados</p>
+  </div>
+  <!--Link al script de bootstrap se copia y pega en todos los html-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/Logo.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <!--Link al CSS-->
     <link rel="stylesheet" type="text/css" href="../css/style.css">
     <title>Sobre Nosotros</title>
@@ -16,52 +18,77 @@
         <div class="logo__div1">
             <img src="../assets/Logo1.png" alt="Logo" class="logo__imagen">
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="../index.html"><b>INICIO</b></a>
-                </li>
-                <li>
-                    <a href="./nosotros.html"><b>NOSOTROS</b></a>
-                </li>
-                <li>
-                    <a href="./contacto.html"><b>CONTACTO</b></a>
-                </li>
-                <li>
-                    <a href="./productos.html"><b>PRODUCTOS</b></a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html""><b>Inicio</b></a>
+                        </li>
+                        <li class=" nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="./nosotros.html"><b>Nosotros</b></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./contacto.html"><b>Contacto</b></a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./productos.html"><b>Productos</b></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
         </nav>
     </header>
     <main class="main__nosotros">
-        <section>
-            <article>
-                <h1>¿Quienes somos?</h1>
-                <p>
-                    Esta empresa se fundo en el año 2022, inicialmente solo estaba compuesta por familiares directos,
-                    con los que debido al constante
-                    avance tecnologico y gracias a que el producto que ofrecemos ha causado un impacto tanto en la
-                    comodidad del cliente, por no tener
-                    que escribir nunca mas sus tarjetas de invitaciones ni tener que enviarlas personalmente, asi como
-                    tambien el impacto al cuidado
-                    del medioambiente.
-                </p>
-            </article>
-            <article>
-                <h1>¿Que ofrecemos?</h1>
-                <p>
-                    En Hi My Party, nos encargamos de que los protagonistas del evento, no tengan que preocuparse por
-                    hacer recuento de personas, o listas
-                    de invitados, ya que le facilitamos su lista, quienes confirmaron y quienes no, y contamos tambien
-                    de acuerdo al numero de invitados
-                    y las mesas disponibles que se confirmen, realizar la distribucion de los invitados.
-                </p>
-            </article>
-        </section>
-        <div class="galeria__nosotros">
-            <img src="../assets/Nosotrosimg4.jpg" alt="Muestra">
-            <img src="../assets/Nosotrosimg5.jpg" alt="Muestra">
-            <img src="../assets/Nosotrosimg6.jpg" alt="Muestra">
+
+        <div class="contenedor__nosotros">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../assets/Nosotrosimg1.jpg" class="card-img-top" alt="...">
+                        <div class="card-nosotros">
+                            <h1>¿Quienes somos?</h1>
+                            <p class="card-text">
+                                Esta empresa se fundo en el año 2022, inicialmente solo estaba compuesta por familiares directos,
+                                con los que debido al constante
+                                avance tecnologico y gracias a que el producto que ofrecemos ha causado un impacto tanto en la
+                                comodidad del cliente, por no tener
+                                que escribir nunca mas sus tarjetas de invitaciones ni tener que enviarlas personalmente, asi como
+                                tambien el impacto al cuidado
+                                del medioambiente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../assets/Nosotrosimg3.jpg" class="card-img-top" alt="...">
+                        <div class="card-nosotros">
+                            <h1>¿Que ofrecemos?</h1>
+                            <p class="card-text">
+                                En Hi My Party, nos encargamos de que los protagonistas del evento, no tengan que preocuparse por
+                                hacer recuento de personas, o listas
+                                de invitados, ya que le facilitamos su lista, quienes confirmaron y quienes no, y contamos tambien
+                                de acuerdo al numero de invitados
+                                y las mesas disponibles que se confirmen, realizar la distribucion de los invitados.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <footer>
@@ -118,6 +145,9 @@
     <div>
         <p class="h3__copyright">Copyright - Todos los derechos reservados</p>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
