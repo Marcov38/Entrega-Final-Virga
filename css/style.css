@@ -450,10 +450,6 @@ footer > * {
 
 @media screen and (max-width:520px){
     
-    nav ul{
-        flex-flow: column wrap;
-    }
-
     /* FOTO INICIO Y TITULO*/
     .div__inicio {
         flex-flow: column wrap;
@@ -480,40 +476,44 @@ footer > * {
 
     /*FOOTER*/
 
-    footer{
-        display: flex;
-        flex-flow: column;
-        justify-content: space-between;
-        align-items: center;
-    }
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
 
-    .footer__nav ul li {
+.footer__nav ul{
+    padding: 0;
+}
+
+.footer__nav ul li {
         text-align: center;
         padding: 10px;
     }
 
-    .newslatter__form > div{
-        text-align: center;
-    }
+.newslatter__form > div{
+    text-align: center;
+}
 
     .boton {
         margin-top: 10px;
     }
 
-    .footer__form h4 {
-        text-align: center;
-        padding-bottom: 0;
-        margin-top: 10px;
-    }
+.footer__form h4 {
+    text-align: center;
+     padding-bottom: 0;
+    margin-top: 10px;
+}
 
 
-    .footer__redes {
-        padding-top: 10px;
-    }
+.footer__redes {
+    padding-top: 10px;
+}
 
-    .footer__redes p {
-        padding-bottom: 10px;
-    }
+.footer__redes p {
+    padding-bottom: 10px;
+}
 
     /*FOOTER*/
 
@@ -591,6 +591,10 @@ footer{
     align-items: center;
 }
 
+.footer__nav ul{
+    padding: 0;
+}
+
 .footer__nav ul li {
     text-align: center;
     padding: 10px;
@@ -623,6 +627,7 @@ footer{
 
 @media screen and (min-width:768px) and (max-width:810px){
 
+/* CONTACTO HTML MEDIA 768 A 810PX */
 .imagen__form img {
     height: 35rem;
     width: 90%;
