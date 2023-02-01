@@ -1,0 +1,22 @@
+{
+  "name": "workbook-tarea-1-links-correctos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marcov38/Hi-my-party.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Marcov38/Hi-my-party/issues"
+  },
+  "homepage": "https://github.com/Marcov38/Hi-my-party#readme",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}
