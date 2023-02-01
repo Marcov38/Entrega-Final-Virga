@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-sass": "node-sass -w --recursive scss/layout/style.scss css/style.css"
   },
   "repository": {
     "type": "git",
