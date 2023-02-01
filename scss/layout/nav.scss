@@ -1,0 +1,35 @@
+@import '../base/variables';
+
+.container-fluid{
+    --bs-gutter-x: 0;
+}
+
+.navbar{
+
+    &-collapse{
+        background-color: $color-principal;
+        padding: 5px;
+    }
+    nav{
+        gap: 10px;
+        font-size: 17px;
+    }
+}
+
+.nav-link {
+    b {
+    color: #ffffff;    
+    }
+}
+
+.nav-item{
+    transition: background 200ms ease-in;
+
+    &:hover{
+        background-color: $color-principal;
+        border: 1px #5e7b79 solid;
+        border-radius: 10px;
+        text-shadow: 1px 1px 1px #00000083;
+    }
+}
+

@@ -81,11 +81,28 @@ footer {
 .h3__copyright {
   text-align: center; }
 
-/* COLORES BASE PAGINA
-    #5e7b79
-    #D59975
-    #63636333 (border)
-*/
+.container-fluid {
+  --bs-gutter-x: 0; }
+
+.navbar-collapse {
+  background-color: #D59975;
+  padding: 5px; }
+
+.navbar nav {
+  gap: 10px;
+  font-size: 17px; }
+
+.nav-link b {
+  color: #ffffff; }
+
+.nav-item {
+  transition: background 200ms ease-in; }
+  .nav-item:hover {
+    background-color: #D59975;
+    border: 1px #5e7b79 solid;
+    border-radius: 10px;
+    text-shadow: 1px 1px 1px #00000083; }
+
 /* PAGINA DE INICIO*/
 @font-face {
   font-family: 'lato';
@@ -115,31 +132,6 @@ footer {
   object-fit: cover; }
 
 /* Fin logo inicio*/
-/*Menu navegacion*/
-.container-fluid {
-  --bs-gutter-x: 0; }
-
-.navbar-collapse {
-  background-color: #D59975;
-  padding: 5px; }
-
-.navbar-nav {
-  gap: 10px;
-  font-size: 17px; }
-
-.nav-link b {
-  color: #ffffff; }
-
-.nav-item {
-  transition: background 200ms ease-in; }
-
-.nav-item:hover {
-  background-color: #D59975;
-  border: 1px #5e7b79 solid;
-  border-radius: 10px;
-  text-shadow: 1px 1px 1px #00000083; }
-
-/*Menu navegacion*/
 /*Imagen bienvenida*/
 .div__inicio h1 {
   color: #ffffff;
