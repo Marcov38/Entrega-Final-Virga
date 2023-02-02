@@ -1,0 +1,190 @@
+
+@import '../base/variables';
+
+@media screen and (max-width:520px){
+    
+    /*FOTO INICIO Y TITULO*/
+    .div__inicio {
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 0px;
+
+        h1 {
+            text-shadow: 1px 1px 2px black;
+        }
+    }
+
+    .parrafo__inicio {
+        text-align: center;
+
+        span {
+            text-shadow: 1px 1px 2px black;
+            background-color: #D5997580;
+        }
+    }
+
+     /* FOTO INICIO Y TITULO*/
+
+
+    /*FOOTER*/
+
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav ul{
+    padding: 0;
+}
+
+.footer__nav ul li {
+        text-align: center;
+        padding: 10px;
+    }
+
+.newslatter__form > div{
+    text-align: center;
+}
+
+    .boton {
+        margin-top: 10px;
+    }
+
+.footer__form h4 {
+    text-align: center;
+     padding-bottom: 0;
+    margin-top: 10px;
+}
+
+
+.footer__redes {
+    padding-top: 10px;
+}
+
+.footer__redes p {
+    padding-bottom: 10px;
+}
+
+    /*FOOTER*/
+
+/*CONTACTO RESPONSIVE*/
+
+.main__contacto {
+    flex-flow: column-reverse;
+}
+
+.main__contacto section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.imagen__form img {
+    height: 500px;
+    width: 100%;
+}
+
+/*CONTACTO RESPONSIVE*/
+
+/*PRODUCTOS RESPONSIVE*/
+
+.main__productos {
+    padding-bottom: 10px;
+}
+
+.tarjetas {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0;
+}
+
+.tarjeta h2 {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.tarjeta__contenedora button {
+    font-size: 12px;
+}
+/*PRODUCTOS RESPONSIVE*/
+
+}
+
+@media screen and (min-width:521px) and (max-width:767px){
+
+/*CONTACTO HTML MEDIA 521 A 767PX*/
+
+.main__contacto {
+    flex-flow: column-reverse wrap;
+    align-items:center;
+}
+
+.main__contacto section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.imagen__form img {
+    height: 100%;
+    width: 100%;
+}
+
+/*CONTACTO HTML MEDIA 521 A 767PX*/
+
+/*Footer contacto HTML MEDIA 521 A 767PX*/
+footer{
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__nav ul{
+    padding: 0;
+}
+
+.footer__nav ul li {
+    text-align: center;
+    padding: 10px;
+}
+
+.newslatter__form > div{
+    text-align: center;
+}
+
+.boton {
+    margin-top: 10px;
+}
+
+.footer__form h4 {
+    text-align: center;
+    padding-bottom: 0;
+    margin-top: 10px;
+}
+
+
+.footer__redes {
+    padding-top: 10px;
+}
+
+.footer__redes p {
+    padding-bottom: 10px;
+}
+
+}
+
+@media screen and (min-width:768px) and (max-width:810px){
+
+/* CONTACTO HTML MEDIA 768 A 810PX */
+.imagen__form img {
+    height: 35rem;
+    width: 90%;
+    object-fit: cover;
+}
+
+}
