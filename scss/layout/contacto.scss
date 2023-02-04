@@ -1,1 +1,77 @@
 @import '../base/variables';
+
+/* CONTACTO.HTML*/
+
+.main__contacto{
+    background-image: url(../assets/Background-nosotros.png) ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    section {
+        width: 50%;
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+        align-items: center;
+        padding-left: 15px;
+
+        h2{
+            padding: 30px 0px;
+            color: #000000;
+        }
+    }
+}
+
+.form__contenido{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+
+    label{
+        padding: 5px;
+    }
+
+    input{
+        border: none;
+    }
+
+    select{
+        border: none;
+    }
+
+    textarea{
+        resize: none;
+        border: none;
+    }
+
+    button{
+        color: #ffffff;
+        font-family: 'Contralto Big';
+        font-size: 14px;
+        text-decoration: none;
+        border: none;
+        background-color:#5e7b79;
+        padding: 3px 3px;
+        margin-top: 10px;
+    }
+}
+
+.imagen__form{
+    display: flex;
+    flex-flow: row;
+    justify-content:space-around;
+
+    img{
+        height:40rem ;
+        width:100% ;
+        object-fit: cover;
+        margin: 10px 15px 10px 0px;
+    }
+}

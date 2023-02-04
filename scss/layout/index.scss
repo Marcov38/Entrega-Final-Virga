@@ -23,27 +23,27 @@
         padding-bottom: 15px;
         text-shadow: 1px 1px 1px #000000;
     }
-}
 
-.parrafo__inicio {
-    font-size: 20px;
-    padding-bottom: 20px;
-    text-shadow: 1px 1px 1px #000000;
-}
+    .parrafo__inicio {
+        font-size: 20px;
+        padding-bottom: 20px;
+        text-shadow: 1px 1px 1px #000000;
+    }
 
-.boton__inicio{
-    color: black;
-    border-radius: 10px;
-    font-family: 'Contralto Big';
-    font-size: 15px;
-    text-decoration: none;
-    background-color: #D59975;
-    padding: 10px 10px;
-    transition: background 200ms ease-in;
-
-    &:hover{
-        background-color: #000000;
-        color: #9acd32;
+    .boton__inicio{
+        color: black;
+        border-radius: 10px;
+        font-family: 'Contralto Big';
+        font-size: 15px;
+        text-decoration: none;
+        background-color: #D59975;
+        padding: 10px 10px;
+        transition: background 200ms ease-in;
+    
+        &:hover{
+            background-color: #000000;
+            color: #9acd32;
+        }
     }
 }
 
@@ -56,29 +56,29 @@
     background-image: url(../assets/Background-nosotros.png);
     background-size: cover;
     background-attachment: fixed;
-}
 
-.titulo__inicio{
-    color: #5e7b79;
-    text-align: center;
-    font-size: 8px;
-}
-
-.card-index{
-    margin: 10px;
-}
-
-.card-body{
-    background-color: #D59975;
-    height: 4rem;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
+    .titulo__inicio{
+        color: #5e7b79;
+        text-align: center;
+        font-size: 8px;
+    }
 }
 
 .container{
     color: #5e7b79;
+
+    .card-index{
+        margin: 10px;
+
+        .card-body{
+            background-color: #D59975;
+            height: 4rem;
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 }
 
 /* Fin Muestra productos*/

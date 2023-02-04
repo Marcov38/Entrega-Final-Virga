@@ -18,24 +18,22 @@
     font-size: 50px;
     padding-bottom: 15px;
     text-shadow: 1px 1px 1px #000000; }
-
-.parrafo__inicio {
-  font-size: 20px;
-  padding-bottom: 20px;
-  text-shadow: 1px 1px 1px #000000; }
-
-.boton__inicio {
-  color: black;
-  border-radius: 10px;
-  font-family: 'Contralto Big';
-  font-size: 15px;
-  text-decoration: none;
-  background-color: #D59975;
-  padding: 10px 10px;
-  transition: background 200ms ease-in; }
-  .boton__inicio:hover {
-    background-color: #000000;
-    color: #9acd32; }
+  .div__inicio .parrafo__inicio {
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-shadow: 1px 1px 1px #000000; }
+  .div__inicio .boton__inicio {
+    color: black;
+    border-radius: 10px;
+    font-family: 'Contralto Big';
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #D59975;
+    padding: 10px 10px;
+    transition: background 200ms ease-in; }
+    .div__inicio .boton__inicio:hover {
+      background-color: #000000;
+      color: #9acd32; }
 
 /*Imagen bienvenida*/
 /* Muestra productos*/
@@ -43,25 +41,22 @@
   background-image: url(../assets/Background-nosotros.png);
   background-size: cover;
   background-attachment: fixed; }
-
-.titulo__inicio {
-  color: #5e7b79;
-  text-align: center;
-  font-size: 8px; }
-
-.card-index {
-  margin: 10px; }
-
-.card-body {
-  background-color: #D59975;
-  height: 4rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center; }
+  .background .titulo__inicio {
+    color: #5e7b79;
+    text-align: center;
+    font-size: 8px; }
 
 .container {
   color: #5e7b79; }
+  .container .card-index {
+    margin: 10px; }
+    .container .card-index .card-body {
+      background-color: #D59975;
+      height: 4rem;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center; }
 
 /* Fin Muestra productos*/
 /* NOSOTROS.HTML*/
@@ -86,6 +81,62 @@
         padding: 10px; }
 
 /* FIN NOSOTROS.HTML*/
+/* CONTACTO.HTML*/
+.main__contacto {
+  background-image: url(../assets/Background-nosotros.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between; }
+  .main__contacto section {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
+    align-items: center;
+    padding-left: 15px; }
+    .main__contacto section h2 {
+      padding: 30px 0px;
+      color: #000000; }
+
+.form__contenido {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  gap: 10px;
+  font-size: 14px; }
+  .form__contenido label {
+    padding: 5px; }
+  .form__contenido input {
+    border: none; }
+  .form__contenido select {
+    border: none; }
+  .form__contenido textarea {
+    resize: none;
+    border: none; }
+  .form__contenido button {
+    color: #ffffff;
+    font-family: 'Contralto Big';
+    font-size: 14px;
+    text-decoration: none;
+    border: none;
+    background-color: #5e7b79;
+    padding: 3px 3px;
+    margin-top: 10px; }
+
+.imagen__form {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around; }
+  .imagen__form img {
+    height: 40rem;
+    width: 100%;
+    object-fit: cover;
+    margin: 10px 15px 10px 0px; }
+
 .logo__div1 {
   display: flex;
   flex-flow: row wrap;
@@ -312,7 +363,9 @@ footer {
   .imagen__form img {
     height: 35rem;
     width: 90%;
-    object-fit: cover; } }
+    object-fit: cover; }
+  .btn__enviar {
+    margin-bottom: 10px; } }
 
 /* PAGINA DE INICIO*/
 @font-face {
@@ -324,68 +377,6 @@ footer {
   padding: 0;
   box-sizing: border-box;
   font-family: 'lato'; }
-
-/* CONTACTO.HTML*/
-.main__contacto {
-  background-image: url(../assets/Background-nosotros.png);
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between; }
-
-.main__contacto section h2 {
-  padding: 30px 0px;
-  color: #000000; }
-
-.main__contacto section {
-  width: 50%;
-  display: flex;
-  flex-flow: column;
-  justify-content: start;
-  align-items: center; }
-
-.form__contenido {
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  gap: 10px;
-  font-size: 14px; }
-
-.form__contenido label {
-  padding: 5px; }
-
-.form__contenido input {
-  border: none; }
-
-.form__contenido select {
-  border: none; }
-
-.form__contenido textarea {
-  resize: none;
-  border: none; }
-
-.form__contenido button {
-  color: #ffffff;
-  font-family: 'Contralto Big';
-  font-size: 14px;
-  text-decoration: none;
-  border: none;
-  background-color: #5e7b79;
-  padding: 3px 3px;
-  margin-top: 10px; }
-
-.imagen_form {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-around; }
-
-.imagen__form img {
-  height: 40rem;
-  width: 100%;
-  object-fit: cover; }
 
 /*PRODUCTOS.HTML*/
 .main__productos {
