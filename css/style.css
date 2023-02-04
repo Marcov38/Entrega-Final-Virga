@@ -110,13 +110,13 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 0px; }
-  .div__inicio h1 {
-    text-shadow: 1px 1px 2px black; }
+    .div__inicio h1 {
+      text-shadow: 1px 1px 2px black; }
   .parrafo__inicio {
     text-align: center; }
-  .parrafo__inicio span {
-    text-shadow: 1px 1px 2px black;
-    background-color: #D5997580; }
+    .parrafo__inicio span {
+      text-shadow: 1px 1px 2px black;
+      background-color: #D5997580; }
   /* FOTO INICIO Y TITULO*/
   /*FOOTER*/
   footer {
@@ -126,9 +126,9 @@ footer {
     align-items: center; }
   .footer__nav ul {
     padding: 0; }
-  .footer__nav ul li {
-    text-align: center;
-    padding: 10px; }
+    .footer__nav ul li {
+      text-align: center;
+      padding: 10px; }
   .newslatter__form > div {
     text-align: center; }
   .boton {
@@ -139,17 +139,17 @@ footer {
     margin-top: 10px; }
   .footer__redes {
     padding-top: 10px; }
-  .footer__redes p {
-    padding-bottom: 10px; }
+    .footer__redes p {
+      padding-bottom: 10px; }
   /*FOOTER*/
   /*CONTACTO RESPONSIVE*/
   .main__contacto {
     flex-flow: column-reverse; }
-  .main__contacto section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: stretch; }
+    .main__contacto section {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: stretch; }
   .imagen__form img {
     height: 500px;
     width: 100%; }
@@ -157,12 +157,12 @@ footer {
   /*PRODUCTOS RESPONSIVE*/
   .main__productos {
     padding-bottom: 10px; }
-  .tarjetas {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 0; }
-  .tarjeta h2 {
-    font-size: 12px;
-    padding: 5px; }
+    .main__productos tarjetas {
+      grid-template-columns: repeat(2, 1fr);
+      padding: 0; }
+      .main__productos tarjetas tarjeta h2 {
+        font-size: 12px;
+        padding: 5px; }
   .tarjeta__contenedora button {
     font-size: 12px; }
   /*PRODUCTOS RESPONSIVE*/ }
@@ -172,10 +172,10 @@ footer {
   .main__contacto {
     flex-flow: column-reverse wrap;
     align-items: center; }
-  .main__contacto section {
-    width: 100%;
-    display: flex;
-    justify-content: center; }
+    .main__contacto section {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
   .imagen__form img {
     height: 100%;
     width: 100%; }
@@ -188,9 +188,9 @@ footer {
     align-items: center; }
   .footer__nav ul {
     padding: 0; }
-  .footer__nav ul li {
-    text-align: center;
-    padding: 10px; }
+    .footer__nav ul li {
+      text-align: center;
+      padding: 10px; }
   .newslatter__form > div {
     text-align: center; }
   .boton {
@@ -201,8 +201,8 @@ footer {
     margin-top: 10px; }
   .footer__redes {
     padding-top: 10px; }
-  .footer__redes p {
-    padding-bottom: 10px; } }
+    .footer__redes p {
+      padding-bottom: 10px; } }
 
 @media screen and (min-width: 768px) and (max-width: 810px) {
   /* CONTACTO HTML MEDIA 768 A 810PX */
