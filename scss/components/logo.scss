@@ -1,0 +1,19 @@
+@import '../base/variables';
+
+.logo__div1{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../assets/Background-nosotros.png);
+    background-attachment: fixed;
+    box-shadow: #63636333 0px 2px 8px 0px;
+
+    img{
+        padding: 10px 10px;
+        width:15rem;
+        height: 8rem;
+        image-rendering:optimizeQuality;
+        object-fit: cover;
+    }
+}
