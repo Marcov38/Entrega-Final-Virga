@@ -165,13 +165,13 @@
         display: flex;
         flex-flow: column; }
         .main__productos .tarjetas .tarjeta .tarjeta__contenedora button {
-          color: #ffffff;
+          color: #FFFFFF;
           font-size: 15px;
-          text-decoration: none;
-          border: none;
           background-color: #5e7b79;
           padding: 3px 3px;
           width: 50%;
+          text-decoration: none;
+          border: none;
           align-self: center; }
           .main__productos .tarjetas .tarjeta .tarjeta__contenedora button:hover {
             background-color: #D59975;

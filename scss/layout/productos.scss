@@ -1,4 +1,5 @@
 @import '../base/variables';
+@import '../base/mixin';
 
 /*PRODUCTOS.HTML*/
 
@@ -11,11 +12,8 @@
     color: #000000;
 
     .tarjetas{
-        display: grid ;
-        grid-template-columns: repeat(3, 1fr);
-        align-items: center;
-        gap: 20px;
-        padding: 50px;
+
+        @include tarjetasproducto(grid,repeat(3, 1fr),center,20px,50px);
 
         .tarjeta{
             text-decoration: none;
@@ -37,13 +35,9 @@
                 flex-flow: column;
 
                 button{
-                    color: #ffffff;
-                    font-size: 15px;
+                    @include botonesproducto($blanco,15px,$color-secundario,3px 3px,50%);
                     text-decoration: none;
                     border: none;
-                    background-color: #5e7b79;
-                    padding: 3px 3px;
-                    width: 50%;
                     align-self: center;
 
                     &:hover{
