@@ -22,7 +22,7 @@
 
         h2{
             padding: 30px 0px;
-            color: #000000;
+            color: $negro;
         }
     }
 }
@@ -52,12 +52,12 @@
     }
 
     button{
-        color: #ffffff;
+        color: $blanco;
         font-family: 'Contralto Big';
         font-size: 14px;
         text-decoration: none;
         border: none;
-        background-color:#5e7b79;
+        background-color:$color-secundario;
         padding: 3px 3px;
         margin-top: 10px;
     }

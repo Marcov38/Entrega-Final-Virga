@@ -9,7 +9,7 @@
     opacity: 0.89;
     width:100% ;
     height: 550px;
-    color: #ffffff;
+    color: $blanco;
     padding-right: 140px;
     display: flex;
     flex-flow: column;
@@ -17,17 +17,17 @@
     justify-content: center;
 
     h1{
-        color:#ffffff;
+        color:$blanco;
         font-family: 'lato';
         font-size: 50px;
         padding-bottom: 15px;
-        text-shadow: 1px 1px 1px #000000;
+        text-shadow: 1px 1px 1px $negro;
     }
 
     .parrafo__inicio {
         font-size: 20px;
         padding-bottom: 20px;
-        text-shadow: 1px 1px 1px #000000;
+        text-shadow: 1px 1px 1px $negro;
     }
 
     .boton__inicio{
@@ -36,12 +36,12 @@
         font-family: 'Contralto Big';
         font-size: 15px;
         text-decoration: none;
-        background-color: #D59975;
+        background-color: $color-principal;
         padding: 10px 10px;
         transition: background 200ms ease-in;
     
         &:hover{
-            background-color: #000000;
+            background-color: $negro;
             color: #9acd32;
         }
     }
@@ -58,20 +58,20 @@
     background-attachment: fixed;
 
     .titulo__inicio{
-        color: #5e7b79;
+        color: $color-secundario;
         text-align: center;
         font-size: 8px;
     }
 }
 
 .container{
-    color: #5e7b79;
+    color: $color-secundario;
 
     .card-index{
         margin: 10px;
 
         .card-body{
-            background-color: #D59975;
+            background-color: $color-principal;
             height: 4rem;
             display: flex;
             flex-flow: column;
