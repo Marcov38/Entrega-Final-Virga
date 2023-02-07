@@ -80,6 +80,7 @@ footer{
         display: flex;
         justify-content: center;
         align-items: stretch;
+        padding-right: 15px
     }
 }
 
@@ -95,11 +96,11 @@ footer{
 .main__productos {
     padding-bottom: 10px;
 
-    tarjetas {
+    .tarjetas {
         grid-template-columns: repeat(2, 1fr);
         padding: 0;
 
-        tarjeta h2 {
+        .tarjeta h2 {
             font-size: 12px;
             padding: 5px;
         }

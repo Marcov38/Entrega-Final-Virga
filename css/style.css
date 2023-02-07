@@ -351,7 +351,8 @@ footer {
       width: 100%;
       display: flex;
       justify-content: center;
-      align-items: stretch; }
+      align-items: stretch;
+      padding-right: 15px; }
   .imagen__form img {
     height: 500px;
     width: 100%; }
@@ -359,10 +360,10 @@ footer {
   /*PRODUCTOS RESPONSIVE*/
   .main__productos {
     padding-bottom: 10px; }
-    .main__productos tarjetas {
+    .main__productos .tarjetas {
       grid-template-columns: repeat(2, 1fr);
       padding: 0; }
-      .main__productos tarjetas tarjeta h2 {
+      .main__productos .tarjetas .tarjeta h2 {
         font-size: 12px;
         padding: 5px; }
   .tarjeta__contenedora button {
