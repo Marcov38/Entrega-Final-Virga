@@ -301,6 +301,10 @@ footer {
     border-radius: 10px;
     text-shadow: 1px 1px 1px #00000083; }
 
+.btn-outline-success {
+  background-color: #FFFFFF;
+  color: #000000; }
+
 @media screen and (max-width: 520px) {
   /*FOTO INICIO Y TITULO*/
   .div__inicio {
