@@ -22,6 +22,7 @@
             h2{
                 color: $negro;
                 text-align: center;
+                font-size: x-large;
             }
 
             img{
@@ -30,27 +31,48 @@
                 padding-bottom: 15px;
             }
 
+            .imgModal{
+                width: 150px;
+            }
+
             .tarjeta__contenedora{
                 display: flex;
                 flex-flow: column;
 
-                button{
-                    @include botonesproducto($blanco,15px,$color-secundario,3px 3px,50%);
-                    text-decoration: none;
-                    border: none;
-                    align-self: center;
+                .modalBackground{
+                  background-color: $color-principal;
+                  color: $blanco;
 
-                    &:hover{
-                        background-color: $color-principal;
-                        color: $negro
-                    }
+                  .btn-close{
+                    width: 2rem;
+                  }
                 }
-                ul{
-                    text-decoration: none;
-                    list-style: none;
+
+                .btn-primary{
+                  background-color: $color-principal;
+                  border: none;
+              
+                  &:hover{
+                    background-color: #cf5f19;
+                    border: none;
+                    animation: scale 2s ease ;
+                  }
+              
+                  @keyframes scale{
+                    0%{
+                      transform: scale(1);
+                    }
+                    50%{
+                      transform: scale(1.1);
+                    }
+                    100%{
+                      transform: scale(1);
+                    }
+                  }
                 }
             }
         }
     }
 }
+
 /*FIN PRODUCTOS.HTML*/

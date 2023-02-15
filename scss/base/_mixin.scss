@@ -1,12 +1,3 @@
-@mixin botonesproducto($color,$fuente,$backgroundcolor,$padding,$width){
-
-    color: $color;
-    font-size: $fuente;
-    background-color: $backgroundcolor;
-    padding: $padding;
-    width: $width;
-}
-
 @mixin tarjetasproducto($display,$templatecol,$alignitem,$gap,$padding){
 
     display: $display;

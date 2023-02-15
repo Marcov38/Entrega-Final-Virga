@@ -101,7 +101,7 @@ footer{
         padding: 0;
 
         .tarjeta h2 {
-            font-size: 12px;
+            font-size: small;
             padding: 5px;
         }
     }
@@ -115,6 +115,15 @@ footer{
 }
 
 @media screen and (min-width:521px) and (max-width:767px){
+
+/*PRODUCTO HTML MEDIA 521 A 767PX*/
+
+.tarjeta h2 {
+    font-size: medium;
+}
+
+/*PRODUCTO HTML MEDIA 521 A 767PX*/
+
 
 /*CONTACTO HTML MEDIA 521 A 767PX*/
 
