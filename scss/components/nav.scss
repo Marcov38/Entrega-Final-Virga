@@ -27,9 +27,10 @@
 
     &:hover{
         background-color: $color-principal;
-        border: 1px $color-secundario solid;
+        
         border-radius: 10px;
         text-shadow: 1px 1px 1px #00000083;
+        box-sizing: border-box;
     }
 }
 

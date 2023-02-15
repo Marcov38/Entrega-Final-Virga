@@ -44,7 +44,8 @@
   .background .titulo__inicio {
     color: #5e7b79;
     text-align: center;
-    font-size: 8px; }
+    font-size: 8px;
+    padding-top: 10px; }
 
 .container {
   color: #5e7b79; }
@@ -156,29 +157,37 @@
       list-style: none; }
       .main__productos .tarjetas .tarjeta h2 {
         color: #000000;
-        text-align: center; }
+        text-align: center;
+        font-size: x-large; }
       .main__productos .tarjetas .tarjeta img {
         width: 100%;
         object-fit: cover;
         padding-bottom: 15px; }
+      .main__productos .tarjetas .tarjeta .imgModal {
+        width: 150px; }
       .main__productos .tarjetas .tarjeta .tarjeta__contenedora {
         display: flex;
         flex-flow: column; }
-        .main__productos .tarjetas .tarjeta .tarjeta__contenedora button {
-          color: #FFFFFF;
-          font-size: 15px;
-          background-color: #5e7b79;
-          padding: 3px 3px;
-          width: 50%;
-          text-decoration: none;
-          border: none;
-          align-self: center; }
-          .main__productos .tarjetas .tarjeta .tarjeta__contenedora button:hover {
-            background-color: #D59975;
-            color: #000000; }
-        .main__productos .tarjetas .tarjeta .tarjeta__contenedora ul {
-          text-decoration: none;
-          list-style: none; }
+        .main__productos .tarjetas .tarjeta .tarjeta__contenedora .modalBackground {
+          background-color: #D59975;
+          color: #FFFFFF; }
+          .main__productos .tarjetas .tarjeta .tarjeta__contenedora .modalBackground .btn-close {
+            width: 2rem; }
+        .main__productos .tarjetas .tarjeta .tarjeta__contenedora .btn-primary {
+          background-color: #D59975;
+          border: none; }
+          .main__productos .tarjetas .tarjeta .tarjeta__contenedora .btn-primary:hover {
+            background-color: #cf5f19;
+            border: none;
+            animation: scale 2s ease; }
+
+@keyframes scale {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.1); }
+  100% {
+    transform: scale(1); } }
 
 /*FIN PRODUCTOS.HTML*/
 .logo__div1 {
@@ -297,9 +306,9 @@ footer {
   transition: background 200ms ease-in; }
   .nav-item:hover {
     background-color: #D59975;
-    border: 1px #5e7b79 solid;
     border-radius: 10px;
-    text-shadow: 1px 1px 1px #00000083; }
+    text-shadow: 1px 1px 1px #00000083;
+    box-sizing: border-box; }
 
 .btn-outline-success {
   background-color: #FFFFFF;
@@ -364,13 +373,17 @@ footer {
       grid-template-columns: repeat(2, 1fr);
       padding: 0; }
       .main__productos .tarjetas .tarjeta h2 {
-        font-size: 12px;
+        font-size: small;
         padding: 5px; }
   .tarjeta__contenedora button {
     font-size: 12px; }
   /*PRODUCTOS RESPONSIVE*/ }
 
 @media screen and (min-width: 521px) and (max-width: 767px) {
+  /*PRODUCTO HTML MEDIA 521 A 767PX*/
+  .tarjeta h2 {
+    font-size: medium; }
+  /*PRODUCTO HTML MEDIA 521 A 767PX*/
   /*CONTACTO HTML MEDIA 521 A 767PX*/
   .main__contacto {
     flex-flow: column-reverse wrap;
