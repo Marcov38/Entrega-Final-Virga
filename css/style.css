@@ -63,8 +63,7 @@
   .container .card-index {
     margin: 10px; }
     .container .card-index .card-body {
-      background-color: #D59975;
-      height: 4rem;
+      height: 2rem;
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -85,12 +84,14 @@
     flex-flow: wrap;
     justify-content: center; }
     .main__nosotros .contenedor__nosotros .card {
-      padding: 10px; }
+      padding: 10px;
+      height: 100%; }
       .main__nosotros .contenedor__nosotros .card .card-nosotros {
         color: #FFFFFF;
         background-color: #5e7b79;
         opacity: 70%;
-        padding: 10px; }
+        padding: 10px;
+        height: 100%; }
 
 /* FIN NOSOTROS.HTML*/
 /* CONTACTO.HTML*/
@@ -375,6 +376,8 @@ footer {
   .imagen__form img {
     height: 500px;
     width: 100%; }
+  .form__contenido button {
+    margin-bottom: 5px; }
   /*CONTACTO RESPONSIVE*/
   /*PRODUCTOS RESPONSIVE*/
   .main__productos {
@@ -405,6 +408,8 @@ footer {
   .imagen__form img {
     height: 100%;
     width: 100%; }
+  .form__contenido button {
+    margin-bottom: 5px; }
   /*CONTACTO HTML MEDIA 521 A 767PX*/
   /*Footer contacto HTML MEDIA 521 A 767PX*/
   footer {
