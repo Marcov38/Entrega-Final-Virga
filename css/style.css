@@ -206,8 +206,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  background-image: url(../assets/Background-nosotros.png);
-  background-attachment: fixed;
+  background: url(../assets/Background-nosotros.png) fixed;
   box-shadow: #63636333 0px 2px 8px 0px; }
   .logo__div1 img {
     padding: 10px 10px;
