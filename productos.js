@@ -134,7 +134,7 @@ const checkCarrito = (id) => {
 const renderProductos = () => {
     const newHtml = productos.map(producto => {
         const carritoButton = checkCarrito(producto.id) ? 
-            `<button type='button' class="btn btn-secondary" onclick="removeCarrito('${producto.id}')">Remover al carrito</a>` :
+            `<button type='button' class="btn btn-secondary" onclick="removeCarrito('${producto.id}')">Remover del carrito</a>` :
             `<button type='button' class="btn btn-primary" onclick="addCarrito('${producto.id}')">Añadir al carrito</a>`;
 
         return `<article class="tarjeta" id="${producto.id}">
