@@ -75,4 +75,42 @@
     }
 }
 
+.btn{
+  color: #ffffff;
+  background-color: $color-principal;
+  border: 2px $blanco;
+}
+
+.cart-title{
+  color: $blanco;
+  font-size: large;
+  background: $color-principal;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+
+.dropdown-menu{
+  background-color: $color-principal;
+  padding: 15px;
+
+  ul {
+    padding: 0px;
+    background-color: $color-principal;
+  
+    li{
+      list-style: none;
+      background-color: $color-principal;
+
+    }
+  }
+
+  .cart-list-subtotal{
+    font-size: large;
+    color: $blanco;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}
+
+
 /*FIN PRODUCTOS.HTML*/

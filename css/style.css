@@ -201,6 +201,33 @@
   100% {
     transform: scale(1); } }
 
+.btn {
+  color: #ffffff;
+  background-color: #D59975;
+  border: 2px #FFFFFF; }
+
+.cart-title {
+  color: #FFFFFF;
+  font-size: large;
+  background: #D59975;
+  letter-spacing: 1px;
+  font-weight: bold; }
+
+.dropdown-menu {
+  background-color: #D59975;
+  padding: 15px; }
+  .dropdown-menu ul {
+    padding: 0px;
+    background-color: #D59975; }
+    .dropdown-menu ul li {
+      list-style: none;
+      background-color: #D59975; }
+  .dropdown-menu .cart-list-subtotal {
+    font-size: large;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 1px; }
+
 /*FIN PRODUCTOS.HTML*/
 .logo__div1 {
   display: flex;
@@ -324,6 +351,9 @@ footer {
 .btn-outline-success {
   background-color: #FFFFFF;
   color: #000000; }
+
+.dropdown {
+  padding-right: 85px; }
 
 @media screen and (max-width: 520px) {
   /*FOTO INICIO Y TITULO*/
