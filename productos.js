@@ -1,4 +1,5 @@
 !localStorage.getItem("productos") && localStorage.setItem("productos", "")
+!localStorage.getItem("cotizacion") && localStorage.setItem("cotizacion", "")
 
 const productos = [
     {
@@ -51,6 +52,33 @@ const productos = [
 ]
 
 
+const mostrarPrecios = () => {
+    // calculo subtotal
+    const listId = localStorage.getItem('productos').split(';')
+    const productEnCarrito = productos.filter(x => listId.includes(x.id));
+    const subtotal = productEnCarrito.reduce((prev, curr) => prev+=curr.precio, 0)
+    // obtengo los datos de dolar y euro blue promedios
+    const data = JSON.parse(localStorage.getItem("cotizacion"))
+    const precioDolar = Number(subtotal) / data.blue.value_avg 
+    const precioEuro = Number(subtotal) / data.blue_euro.value_avg
+    Swal.fire({
+        title: '<h1>Confirmar compra</h1>',
+        icon: 'success',
+        html:
+          `<ul class="finalizar-compra">
+          <li><b>Precio Dolar:</b> ${precioDolar.toFixed(2)}US$</li>
+          <li><b>Precio Euro:</b> ${precioEuro.toFixed(2)}€</li>
+          <li><b>Precio Pesos:</b> $${subtotal.toFixed(2)}</li>
+          </ul>`,
+        showCloseButton: true,
+        showCancelButton: true,
+        focusConfirm: false,
+        confirmButtonText:
+          '<i class="boton-aceptacompra" onclick="alertaToast(`Compra finalizada`)">Aceptar</i>',
+        cancelButtonText:
+          '<i class="boton-rechazacompra" onclick="alertaToast(`Seguir eligiendo productos!`)">Cancelar</i>',
+      })
+}
 
 const actualizarCarrito = () => {
     // Obtengo ids del localstorage
@@ -86,6 +114,14 @@ const actualizarCarrito = () => {
             precioText.textContent= `Subtotal: $${subtotal}`
             cartListContainer.appendChild(precioText)
         }
+        // Si hay items añadir el boton de finalizar compra
+        if(!document.querySelector('#cart-list-boton-finalizar')) {
+            const botonFinalizar = document.createElement('div');
+            botonFinalizar.setAttribute('id', 'cart-list-boton-finalizar')
+            botonFinalizar.setAttribute('class', 'd-grip gap-2')
+            botonFinalizar.innerHTML = `<button class="btn btn-primary" type="button" onclick="mostrarPrecios()">Finalizar Compra</button>`
+            cartListContainer.appendChild(botonFinalizar)
+        }
     } else {
         // Sino poner que no hay items
         cartListTitle.innerText = 'Su carrito esta vacio';
@@ -96,9 +132,10 @@ const actualizarCarrito = () => {
         if(cartListPrecio) {
             cartListPrecio.remove()
         }
+        const botonFinalizar = document.querySelector('#cart-list-boton-finalizar');
+        botonFinalizar && botonFinalizar.remove()
     }
 }
-
 
 const addCarrito = (id) => {
     const actualStorage = localStorage.getItem('productos').split(';');
@@ -108,11 +145,12 @@ const addCarrito = (id) => {
     const productHtml = document.getElementById(id).getElementsByClassName('card-body')[0];
     productHtml.removeChild(productHtml.getElementsByTagName('button')[0]);
     const newBtn = document.createElement('div')
-    newBtn.innerHTML = `<button type='button' class="btn btn-secondary" onclick="removeCarrito('${id}')">Remover del carrito</a>`
+    newBtn.innerHTML = `<button type='button' class="btn btn-secondary" onclick="removeCarrito('${id}') ">Remover del carrito</a>`
     productHtml.appendChild(newBtn.firstChild);
-
     actualizarCarrito()
+    alertaToast('Añadido al carrito')
 }
+
 const removeCarrito = (id) => {
     const actualStorage = localStorage.getItem('productos').split(';');
     localStorage.setItem('productos', actualStorage.filter(x => x !== id).join(';'));
@@ -124,6 +162,7 @@ const removeCarrito = (id) => {
     productHtml.appendChild(newDiv.firstChild) // <div class="card-body">...childs+button</div>
         
     actualizarCarrito()
+    alertaToast('Eliminado del carrito')
 }
 
 const checkCarrito = (id) => {
@@ -155,4 +194,38 @@ const renderProductos = () => {
     actualizarCarrito()
 }
 
+const alertaToast = (mensaje) => {
+    Toastify({
+        text: mensaje,
+        duration: 1500,
+        close: true,
+        gravity: "top", 
+        position: "center",
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "#198754",
+          color: '$white',
+          'font-size': '16px',
+          'font-weight': 'bolder',
+        }
+      }).showToast();
+}
+
+const getCotizaciones = () => {
+    const cotizacionCache = localStorage.getItem("cotizacion");
+    // Verificar la cotizacion guardada en local - Max 1Dia 
+    if(cotizacionCache) {
+        const cacheData = JSON.parse(localStorage.getItem("cotizacion"));
+        const previousDate = new Date(cacheData.last_update);
+        previousDate.setDate(previousDate.getDate() + 1 );
+        if(previousDate.getTime() > new Date().getTime()) return
+    }
+    fetch('https://api.bluelytics.com.ar/v2/latest')
+        .then((res) => res.json())
+        .then((data) => {
+            localStorage.setItem("cotizacion", JSON.stringify(data))
+    })
+}
+
 renderProductos()
+getCotizaciones()
