@@ -119,7 +119,7 @@ const actualizarCarrito = () => {
             const botonFinalizar = document.createElement('div');
             botonFinalizar.setAttribute('id', 'cart-list-boton-finalizar')
             botonFinalizar.setAttribute('class', 'd-grip gap-2')
-            botonFinalizar.innerHTML = `<button class="btn btn-primary" type="button" onclick="mostrarPrecios()">Finalizar Compra</button>`
+            botonFinalizar.innerHTML = `<button class="btn btn-primary-f" type="button" onclick="mostrarPrecios()">Finalizar Compra</button>`
             cartListContainer.appendChild(botonFinalizar)
         }
     } else {

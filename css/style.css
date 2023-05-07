@@ -233,6 +233,20 @@
   .finalizar-compra li {
     font-size: large; }
 
+.btn-warning:hover {
+  background-color: #5e7b79;
+  color: #FFFFFF; }
+
+.btn-primary-f {
+  background-color: #5e7b79; }
+  .btn-primary-f:hover {
+    background-color: #058805;
+    color: #FFFFFF; }
+
+.btn-check:checked + .btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check) + .btn:active {
+  background-color: #D59975;
+  color: #FFFFFF; }
+
 /*FIN PRODUCTOS.HTML*/
 .logo__div1 {
   display: flex;

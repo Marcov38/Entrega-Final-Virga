@@ -119,4 +119,23 @@
   }
 }
 
+.btn-warning{
+  &:hover{
+    background-color: $color-secundario;
+    color: $blanco;
+  }
+}
+
+.btn-primary-f{
+  background-color: $color-secundario;
+  &:hover{
+    background-color: #058805;
+    color: $blanco;
+  }
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+  background-color: $color-principal;
+  color: $blanco;
+}
 /*FIN PRODUCTOS.HTML*/
